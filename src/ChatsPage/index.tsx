@@ -43,11 +43,11 @@ const ChatsPage = () => {
       <div className="background-gradient-light">
         <div
           style={{
-            position: "relative",
+            position: "fixed",
             top: isMobile ? "0px" : "10vh",
-            left: isMobile ? "0px" : "calc(50vw - 3vw - 1.5vw - 35vw)",
             height: isMobile ? "100vh" : "80vh",
-            width: isMobile ? "100vw" : "calc(100vw - 10.5vw - 10.5vw)",
+            left: isMobile ? "0" : "2vw",
+            width: isMobile ? "100vw" : "calc(100vw)",
             backgroundColor: "grey",
           }}
         >
@@ -63,10 +63,10 @@ const ChatsPage = () => {
           >
             <Sidebar />
           </div>
-
+          <div style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}/>
           <div
             style={{
-              width: isMobile ? "100vw" : "calc(100vw - 6vw)",
+              width: isMobile ? "100vw" : "calc(120vw)",
               position: "absolute",
               top: "0px",
               left: isMobile ? "0px" : "6vw",
